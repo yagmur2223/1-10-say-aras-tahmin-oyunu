@@ -1,14 +1,12 @@
 # 1den-10-tahmin-oyunu
-
-Basit bir Python oyunudur. Bilgisayar 1 ile 10 arasında bir sayı tutar; oyuncu bu sayıyı tahmin etmeye çalışır.
-
-Çalıştırma:
-1. Python 3 yüklü olmalı.
-2. Terminal/Komut İstemi'nde:
-```
-python tahmin_1den10.py
-```
-
-Notlar:
-- Hatalı girişlerde kullanıcıya uyarı verilir.
-- Proje basit öğrenme amaçlıdır.
+import random
+tutulan_sayi=random.randint(1,10)
+while True:
+    tahmin=int(input("tahmininizi giriniz="))
+    if tahmin<tutulan_sayi:
+        print("daha büyük bir sayı dene")
+    elif tahmin>tutulan_sayi:
+        print("daha küçük bir sayı dene")
+    else:
+        print("tebrikler bukdunuz")
+        break
